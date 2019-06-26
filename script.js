@@ -12,12 +12,7 @@ $(document).ready(function() {
         }
     });
 
-    $('.nav-point').click(function() {
-        $('.menubar-nav').hide(500);
-        $('.lines-close').hide(500);
-        $('.lines').show(500);
-        $('.deskripsi-par').show(500);
-    });
+
 
     $(window).scroll(function() {
         var wScroll = $(this).scrollTop();
@@ -33,6 +28,12 @@ $(document).ready(function() {
 
     if($(window).innerWidth() < 1000) {
         $('.menubar-nav').hide();
+        $('.nav-point').click(function() {
+          $('.menubar-nav').hide(500);
+          $('.lines-close').hide(500);
+          $('.lines').show(500);
+          $('.deskripsi-par').show(500);
+    });
     }
 
     $(window).scroll(function() {
